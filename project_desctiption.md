@@ -67,7 +67,11 @@ Detection and postprocessing logic is described in the [processing.py](code/proc
 
 ### Demo Interface
 
-TBD
+Here are some images showing the interface described above.
+<img width="1080" alt="start_page" src="https://github.com/seleznevajane/dls1_final_project/assets/81403952/808d50d1-4621-4e96-ba5f-43082ebd5367">
+<img width="1080" alt="example_park_page" src="https://github.com/seleznevajane/dls1_final_project/assets/81403952/3fb0ba9e-37b1-42a3-96d8-d091b8a0bdf9">
+<img width="1080" alt="example_park_page_no_animals" src="https://github.com/seleznevajane/dls1_final_project/assets/81403952/d24fe136-a652-4a08-ae50-fce4708c8245">
+<img width="1080" alt="example_park_page_results" src="https://github.com/seleznevajane/dls1_final_project/assets/81403952/56307fe6-9098-4458-9072-4995bebb2bcb">
 
 ### Model Inference
 
