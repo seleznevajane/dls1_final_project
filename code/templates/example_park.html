@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Example Park</h2>
+<p>Upload a photo to learn more about our animals!</p>
+<form id="uploadForm" action="/example_park" method="post" enctype="multipart/form-data">
+  <input type="file" name="file">
+  <input type="submit" value="Find animals">
+</form>
+
+{% if image_url %}
+<img id="processed-image" src="{{ image_url }}" alt="Upload a photo to see result" usemap="#workmap" style="width:600px;">
+{% endif %}
+
+<!-- <img src="workplace.jpg" alt="Workplace" usemap="#workmap"> -->
+
+<map name="workmap">
+  {% if coords_data %}
+    {% for obj in coords_data %}
+      <area shape="rect" coords="{{ obj[1] }}" href="{{ obj[0] }}">
+    {% endfor %}
+  {% endif %}
+</map>
+
+<br>
+
+{% if text_data %}
+{% for line in text_data %}
+  <p style="font-size:100%;">{{ line[0] }} 
+    {% if line[1] %}
+      <a href="{{ line[1] }}">Read more!</a>
+    {% endif %}<p>
+{% endfor %}
+{% endif %}
+
+<br>
+<a href="/">Choose another park</a>
+</body>
+</html>
